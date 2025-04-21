@@ -9,8 +9,12 @@ addPlayer.addEventListener('click', () => {
   const countAdd = document.createElement('button');
   const countMin = document.createElement('button');
   const total = document.createElement('p');
-  player.textContent = playerInput.value;
-  playersList.appendChild(player);
+
+  if (playerInput.value !== '') {
+    player.textContent = playerInput.value;
+    playersList.appendChild(player);
+  }
+
   playerInput.value = '';
   countAdd.textContent = '+100';
   player.appendChild(countAdd);
@@ -18,6 +22,7 @@ addPlayer.addEventListener('click', () => {
   player.appendChild(countMin);
   total.textContent = '0';
   player.appendChild(total);
+  
   if (countAdd.addEventListener && countMin.addEventListener) {
     countAdd.addEventListener('click', () => {
       total.textContent = parseInt(total.textContent) + 100;

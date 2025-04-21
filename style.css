@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'inter', sans-serif;
-  background-color: antiquewhite;
+  background-color: #faebd7;
 }
 
 #app {
@@ -78,7 +78,7 @@
   margin: 0.5rem 0;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 #players-list li button {

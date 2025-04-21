@@ -9,8 +9,9 @@
 #app {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .title {
@@ -32,7 +33,7 @@
 }
 
 #player-input {
-  padding: 0.5rem;
+  padding: 1rem;
   margin: 0.5rem 0;
   border: none;
   border-radius: 5px;
@@ -51,7 +52,7 @@
 
 #add-player-btn {
   background-color: #ffffff;
-  padding: 0.2rem 0;
+  padding: 0.5rem 0.7rem;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border: none;
@@ -64,15 +65,15 @@
 
 #players-list {
   list-style: none;
-  padding: 0;
+  padding: 0.5rem 0;
   margin: 0;
 }
 
 #players-list li {
   display: flex;
-  justify-content: space-between;
+  gap: 1.5rem;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.5rem 0.7rem;
   margin: 0.5rem 0;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -81,7 +82,7 @@
 
 #players-list li button {
   background-color: #ffffff;
-  padding: 0.2rem 0.5rem;
+  padding: 0.5rem 0.7rem;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border: antiquewhite;

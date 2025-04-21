@@ -9,7 +9,6 @@ addPlayer.addEventListener('click', () => {
   const countAdd = document.createElement('button');
   const countMin = document.createElement('button');
   const total = document.createElement('p');
-  const clear = document.createElement('button');
   player.textContent = playerInput.value;
   playersList.appendChild(player);
   playerInput.value = '';
@@ -27,10 +26,6 @@ addPlayer.addEventListener('click', () => {
       total.textContent = parseInt(total.textContent) - 50;
     });
   }
-  clear.addEventListener('click', () => {
-    player.remove();
-  });
-  player.appendChild(clear);
 });
 
 if (reset.addEventListener) {
